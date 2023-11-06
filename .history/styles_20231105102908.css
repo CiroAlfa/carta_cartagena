@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+  }
+  
+  .green-bar {
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .yellow-bar {
+    background-color: yellow;
+    height: 50px;
+    margin-top: 50px; /* La altura de la barra verde */
+  }
+  
+  main {
+    margin-top: 100px; /* La altura de la barra verde y la amarilla */
+  }

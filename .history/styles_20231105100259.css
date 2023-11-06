@@ -1,0 +1,51 @@
+.menu {
+    width: 100%;
+    height: 20vh;
+    background-color: #39ff14;
+    position: sticky;
+    top: 0;
+    z-index: 2;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* El resto de tus estilos van aquí */
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.yellow-bar {
+    margin-top: 300px;
+    width: 100%;
+    height: 60vh; /* Tres veces la altura del menú */
+    background-color: #ffff66; /* Color amarillo pollito */
+    position: relative;
+    z-index: 1; /* Menor que el z-index del menú para que se esconda debajo al hacer scroll */
+    /* Añade aquí el resto de tus estilos */
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    padding: 0 10px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Ajusta el tamaño del texto del menú */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}

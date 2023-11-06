@@ -1,0 +1,650 @@
+body {
+    margin: 0;
+  }
+  
+  .green-bar {
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+  }
+  
+  .menu-header {
+    color: black;
+    font-size: 24px;
+  }
+  
+  #header {
+    transition: background-color 0.5s ease; /* Añade una transición suave al cambiar el color de fondo */
+    background-color: green; /* Color de fondo inicial */
+}
+
+#header.scrolling-active {
+    background-color: rgb(35, 240, 35); /* Cambia el color de fondo a negro cuando se hace scroll */
+}
+#header.scrolling-active a.menu-link {
+  color: blue;
+}
+
+
+
+  .menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 0 10px;
+  }
+  
+  .menu a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .yellow-bar {
+    background-color: yellow;
+    height: 450px;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .yellow-bar h1 {
+    font-size: 1em; /* Ajusta el tamaño del LOGO */
+}
+
+.yellow-bar h2 {
+    font-size: 5em; /* Ajusta el tamaño de "CARTA - CARTAGENA" */
+}
+.yellow-bar p {
+    font-size: 2em; /* Ajusta el tamaño del párrafo */
+}
+
+.estilo-zumos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+
+
+.circulo {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* 10% del ancho de la ventana del navegador */
+    height: 115px; /* 20% de la altura de la ventana del navegador */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 877px;
+   /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+
+.circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 1759px; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+.section h2.estilo-batidos {
+    transform: scaleY(3); /* Alargar verticalmente el texto */
+}
+
+
+
+
+
+
+#bowls .estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+
+#bowls .circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 2270px; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.section h2#bowls .estilo-batidos {
+    transform: scaleY(4); /* Alargar verticalmente el texto */
+}
+
+
+
+
+
+
+
+
+#tostas .estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+
+#tostas .circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 2940px; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.section h2#tostas .estilo-batidos {
+    transform: scaleY(4); /* Alargar verticalmente el texto */
+}
+
+
+
+
+#ensaladas .estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    font-size: 20px;
+}
+
+#ensaladas .circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 4365px; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.section h2#ensaladas .estilo-batidos {
+    transform: scaleY(4); /* Alargar verticalmente el texto */
+}
+
+
+
+#pasteles .estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    font-size: 20px;
+}
+
+#pasteles .circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 5190px; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.section h2#pasteles .estilo-batidos {
+    transform: scaleY(14); /* Alargar verticalmente el texto */
+}
+
+
+
+
+
+#cafes .estilo-batidos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px; /* Espaciado entre las letras */
+    font-weight: 100;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    font-size: 20px;
+}
+
+#cafes .circulo-batidos {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px; /* Ajusta este valor según tus necesidades */
+    height: 115px; /* Ajusta este valor según tus necesidades */
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 1056%; /* Ajusta este valor según tus necesidades */
+    left: 50%; /* Ajusta este valor según tus necesidades */
+    transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+
+.section h2#cafes .estilo-batidos {
+    transform: scaleY(6); /* Alargar verticalmente el texto */
+}
+
+#te .circulo-batidos {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 115px; /* Ajusta este valor según tus necesidades */
+  height: 115px; /* Ajusta este valor según tus necesidades */
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: -1;
+  top: 1352%; /* Ajusta este valor según tus necesidades */
+  left: 50%; /* Ajusta este valor según tus necesidades */
+  transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+  pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+
+.section h2#te .estilo-batidos {
+  transform: scaleY(6); /* Alargar verticalmente el texto */
+}
+
+
+
+#bebidas .estilo-batidos {
+  color: black;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px; /* Espaciado entre las letras */
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  font-size: 20px;
+}
+
+#bebidas .circulo-batidos {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 115px; /* Ajusta este valor según tus necesidades */
+  height: 115px; /* Ajusta este valor según tus necesidades */
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: -1;
+  top: 1525%; /* Ajusta este valor según tus necesidades */
+  left: 50%; /* Ajusta este valor según tus necesidades */
+  transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+  pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+
+.section h2#bebidas .estilo-batidos {
+  transform: scaleY(6); /* Alargar verticalmente el texto */
+}
+
+
+
+
+
+#bebidas-heladas .estilo-batidos {
+  color: black;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px; /* Espaciado entre las letras */
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  font-size: 20px;
+}
+
+#bebidas-heladas .circulo-batidos {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 115px; /* Ajusta este valor según tus necesidades */
+  height: 115px; /* Ajusta este valor según tus necesidades */
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: -1;
+  top: 1715%; /* Ajusta este valor según tus necesidades */
+  left: 50%; /* Ajusta este valor según tus necesidades */
+  transform: translate(-50%, -50%); /* Centra el círculo en relación con la posición determinada por top y left */
+  pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+
+.section h2#bebidas-heladas .estilo-batidos {
+  transform: scaleY(6); /* Alargar verticalmente el texto */
+}
+
+
+
+
+
+
+
+
+
+
+.opciones-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.section h2.estilo-zumos {
+    transform: scaleY(4); /* Alargar verticalmente el texto */
+}
+  .content {
+    margin-top: 200px;
+  }
+  .section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section li {
+    margin-bottom: 20px;
+  }
+  
+  .section h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .section h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: green; /* Añadido para cambiar el color del texto a verde */
+}
+
+.section p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-style: italic; /* Añadido para cambiar el texto a cursiva */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-logo, .facebook-logo {
+  cursor: pointer;
+  margin: 0 15px; /* Ajustar el margen entre los logos */
+} 
+
+
+
+
+.instagram-logo {
+  position: relative;
+  border: 4px solid white;
+  border-radius: 10px;
+  width: 45px; /* Hacer el cuadrado más ancho */
+  height: 45px; /* Hacer el cuadrado más ancho */
+  /* margin: 0 auto; Eliminar esta línea */
+
+}
+
+.instagram-logo::before {
+  content: "";
+  position: absolute;
+  top: 5px; /* Mover el putico hacia abajo */
+  right: 5px; /* Mover el putico hacia la izquierda */
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.instagram-logo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 4px solid white; /* Agregar borde blanco al círculo */
+  background-color: transparent; /* Hacer el centro del círculo transparente */
+  border-radius: 50%;
+}
+
+
+
+.facebook-logo {
+  position: relative;
+  border: 2px solid white; /* Hacer el borde del círculo blanco */
+  border-radius: 50%; /* Hacer el logo redondo */
+  width: 50px;
+  height: 50px;
+  /* margin: 0 auto; Eliminar esta línea */
+  background-color: white; /* Hacer el fondo del logo blanco */
+}
+
+
+.facebook-logo::after {
+  content: "f"; /* Agregar la "f" del logo de Facebook */
+  position: absolute;
+  bottom: -20px; /* Bajar la "f" un poco más */
+  left: 50%;
+  transform: translateX(-50%);
+  color: yellow; /* Hacer la "f" del color del fondo de la barra del pie de página */
+  font-size: 60px; /* Hacer la "f" más grande */
+  font-weight: bold; /* Hacer la "f" más gruesa */
+  font-family: Arial, sans-serif; /* Ajustar la fuente de la "f" */
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%; /* Ajusta este valor según el tamaño que desees para el logo */
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+  /*cursor*/
+
+  .cursor {
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transition: ease 0.1s;
+    pointer-events: none;
+    z-index: 9999; /* Añadido para asegurar que se superponga a todo en tu página */
+}
+
+.dot {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.yellow-background {
+  background-color: yellow;
+  height: 75vh; /* 75% de la altura de la ventana del navegador */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3em; /* Tamaño del título */
+  color: black;
+}
+
+.link {
+  font-size: 2em; /* Tamaño del enlace */
+  color: black;
+  text-decoration: none;
+}
+
+.small-text {
+  font-size: 1.5em; /* Tamaño del texto pequeño */
+  color: black;
+}
+
+.white-background {
+  background-color: white;
+  height: 25vh; /* 25% de la altura de la ventana del navegador */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.smaller-text {
+  font-size: 1em; /* Tamaño del texto más pequeño */
+  color: black;
+}

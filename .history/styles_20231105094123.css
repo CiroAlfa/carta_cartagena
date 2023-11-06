@@ -1,0 +1,29 @@
+.menu {
+    width: 100%;
+    height: 30vh;
+    background-color: #39ff14;
+    position: sticky;
+    top: 0;
+    z-index: 2;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* El resto de tus estilos van aquí */
+}
+
+.yellow-bar {
+    margin-top: 300px;
+    width: 100%;
+    height: 10vh; /* Tres veces la altura del menú */
+    background-color: #ffff66; /* Color amarillo pollito */
+    position: relative;
+    z-index: 1; /* Menor que el z-index del menú para que se esconda debajo al hacer scroll */
+    /* Añade aquí el resto de tus estilos */
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}

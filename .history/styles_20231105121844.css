@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+  }
+  
+  .green-bar {
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+  }
+  
+  .menu-header {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 0 10px;
+  }
+  
+  .menu a {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .yellow-bar {
+    background-color: yellow;
+    height: 450px;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .yellow-bar h1 {
+    font-size: 1em; /* Ajusta el tamaño del LOGO */
+}
+
+.yellow-bar h2 {
+    font-size: 5em; /* Ajusta el tamaño de "CARTA - CARTAGENA" */
+}
+.yellow-bar p {
+    font-size: 2em; /* Ajusta el tamaño del párrafo */
+}
+.estilo-zumos {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px; /* Espaciado entre las letras */
+    font-weight: 90;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+
+.circulo {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+    top: 0;
+    left: 1;
+    pointer-events: none; /* Añadido para permitir que el cursor sobrepase el círculo */
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+}
+
+.section h2.estilo-zumos {
+    transform: scaleY(2); /* Alargar verticalmente el texto */
+}
+
+  
+
+
+
+
+
+
+  .content {
+    margin-top: 80px;
+  }
+  .section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section li {
+    margin-bottom: 20px;
+  }
+  
+  .section h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .section h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .section p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
+
+
+
+
+  /*cursor*/
+
+  .cursor {
+    width: 45px;
+    height: 45px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transition: ease 0.1s;
+    pointer-events: none;
+    z-index: 9999; /* Añadido para asegurar que se superponga a todo en tu página */
+}
+
+.dot {
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
